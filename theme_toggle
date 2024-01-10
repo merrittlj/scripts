@@ -1,9 +1,11 @@
+#!/bin/bash
+
 echo $((1 - `cat "${THEME_PATH}theme.value"`)) > ${THEME_PATH}theme.value  # Toggle theme value.
 
-/usr/bin/set_status_bar  # Update dwm status bar.
+$BIN_PATH/set_status_bar  # Update dwm status bar.
 pkill -USR1 st  # Send signal to refresh theme to st.
 
-/usr/bin/set_correct_background  # Update the background.
+$BIN_PATH/set_correct_background  # Update the background.
 
 if [[ `cat ${THEME_PATH}theme.value` == "0" ]]; then  # If the new theme is the light theme.
    emacsclient --eval --suppress-output "(load-theme 'modus-operandi)

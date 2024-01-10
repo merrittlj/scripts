@@ -1,3 +1,5 @@
+#!/bin/bash
+
 THEME="error"
 DATE=`date "+%m|%d %H.%M"`
 BATTERY=`acpi | grep -o '[0-9]*%'`
