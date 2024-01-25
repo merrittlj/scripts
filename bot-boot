@@ -6,4 +6,4 @@ sleep 3
 
 setxkbmap -layout us -variant dvp -option ctrl:swapcaps
 
-python /home/lucas/programming/misc/bots/brawlhalla/v1.0/brawlhalla.py
+# python3 $BRAWLHALLA_RUNNER_PATH/runner.py
